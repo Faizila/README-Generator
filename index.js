@@ -5,6 +5,11 @@ const generate = require("./utils/generateMarkdown");
 
 //array of questions for user input
 const questions = [
+	{
+        type: 'input',
+        message: 'Enter your Name: ',
+        name: 'name',
+    },
     {
         type: 'input',
         message: 'What is the title of your project?',
@@ -16,9 +21,10 @@ const questions = [
         name: 'description',
     },
     {
-        type: 'input',
-        message: 'Enter installation instructions if any: ',
-        name: 'install',
+		type: "input",
+        message: "What command should be run to install dependencies?",
+        default: "npm i",
+		name: "install",
     },
     {
         type: 'input',
@@ -39,12 +45,13 @@ const questions = [
     {
         type: 'input',
         message: 'Enter test instructions: ',
+		default: "npm test",
         name: 'tests',
     },
     {
         type: 'input',
         message: 'Enter your GitHub username: ',
-        name: 'github',
+        name: 'username',
     },
     {
         type: 'input',
@@ -56,7 +63,6 @@ const questions = [
 
 //function to write README file
 function writeToFile(fileName, data) {
-    // fs.writeFile('README.md', data, (err) =>
     fs.writeFile(fileName, data, (err) =>    
     err ? console.log("Error, try again!") : console.log('Your README has been successfully created!')
 );
@@ -64,13 +70,12 @@ function writeToFile(fileName, data) {
 
 // function to initialize app
 function init() {
-    inquirer.prompt(questions)
-    .then(res => { 
-        //use the data from response to generate a README file
-        const finalReadme = generateMarkdown(res)
-        console.log(res)
-        writeToFile('generatedREADME.md', finalReadme)
-    })
+	inquirer.prompt(questions)
+    .then((response) => {
+		const readmeContent = generate(response);
+        writeToFile("README.md", readmeContent, (err) =>    
+		err ? console.log("Error, try again!") : console.log('Your README has been successfully created!'))
+});
 }
 
 //function call to initialize app

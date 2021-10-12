@@ -1,7 +1,6 @@
 //packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const axios = require("axios");
 const generate = require("./utils/generateMarkdown");
 
 //array of questions for user input
@@ -27,8 +26,9 @@ const questions = [
         name: 'usage',
     },
     {
-        type: 'input',
-        message: 'Enter the project license if any: ',
+        type: 'list',
+        message: 'Choose the license for this project: ',
+        choices: ["MIT", "GNU", "Apache","None"],  
         name: 'license',
     },
     {
@@ -55,10 +55,23 @@ const questions = [
 ];
 
 //function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    // fs.writeFile('README.md', data, (err) =>
+    fs.writeFile(fileName, data, (err) =>    
+    err ? console.log("Error, try again!") : console.log('Your README has been successfully created!')
+);
+}
 
-//function to initialize app
-function init() {}
+// function to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then(res => { 
+        //use the data from response to generate a README file
+        const finalReadme = generateMarkdown(res)
+        console.log(res)
+        writeToFile('generatedREADME.md', finalReadme)
+    })
+}
 
 //function call to initialize app
 init();

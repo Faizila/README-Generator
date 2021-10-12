@@ -9,14 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.23.0",
     "inquirer": "^8.2.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Faizila/README-Generator"
   },
-  "keywords": [],
   "bugs": {
     "url": "https://github.com/Faizila/README-Generator/issues"
   },

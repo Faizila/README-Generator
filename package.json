@@ -16,7 +16,8 @@
     "type": "git",
     "url": "git+https://github.com/Faizila/README-Generator"
   },
-  "issues": {
+  "keywords": [],
+  "bugs": {
     "url": "https://github.com/Faizila/README-Generator/issues"
   },
   "homepage": "https://github.com/Faizila/README-Generator#readme"

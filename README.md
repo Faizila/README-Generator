@@ -35,6 +35,7 @@ Professional README Generator
 * Link
 * Screenshots
 * Video
+* Questions
 
 # Built With:
 
@@ -46,7 +47,9 @@ Professional README Generator
 
 ```bash
 npm init
+```
 
+```bash
 npm install inquirer
 ```
 # Usage
@@ -66,25 +69,27 @@ node index.js
 
 Faizila Amlani
 
-# Tests
-
-In order to test this application, type the following in the command:
-
-node index.js
-
 # Link of Deployed Application 
 
-https://github.com/Faizila/README-Generator/blob/main/generatedREADME.md
+Instructional README: https://faizila.github.io/README-Generator/
+
+Refer to Video section for sample generated README.
 
 # Screenshots
 
-![gitbash-img](https://user-images.githubusercontent.com/78191579/137048445-ddbb0b3e-5403-4c89-9c7e-4cd03ae63de1.JPG)
-![generatedREADME2](https://user-images.githubusercontent.com/78191579/137048449-af7156ca-47e9-4894-9f35-c2a268d1faf4.JPG)
-![generatedREADME1](https://user-images.githubusercontent.com/78191579/137048457-0fb07295-b996-4d09-b33d-562751f2adb0.JPG)
+
 
 # Video
 
 See a walkthrough video demonstrating the functionality of the application here:
-https://watch.screencastify.com/v/UhhsGGLOtBcgX4ZdzxJx
 
-  
+
+# Questions
+
+- If you have any other questions or comments you can contact me at:
+   <br>
+   My GitHub: https://github.com/Faizila
+   <br>
+   My Email : amlani.faizila@gmail.com
+   <br>
+   Issues: https://github.com/Faizila/README-Generator/issues

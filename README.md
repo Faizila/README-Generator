@@ -92,6 +92,8 @@ Refer to Video section for sample generated README.
 See a walkthrough video demonstrating the functionality of the application here:
 https://watch.screencastify.com/v/asWIj0BnZ9dIox2UbR1q
 
+DEMO: https://github.com/Faizila/README-Generator/blob/main/assets/DEMO.gif
+
 # Questions
 
 If you have any other questions or comments you can contact me at:

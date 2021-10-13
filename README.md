@@ -75,11 +75,11 @@ Faizila Amlani
 
 Make sure you have installed inquirer properly otherwise nothing will work.
 
-# Link of Deployed Application 
-
-Instructional README: https://faizila.github.io/README-Generator/
+# Link
 
 Refer to Video section for sample generated README.
+
+DEMO: https://github.com/Faizila/README-Generator/blob/main/assets/DEMO.gif
 
 # Screenshots
 

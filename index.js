@@ -13,7 +13,7 @@ const questions = [
     {
         type: 'input',
         message: 'What is the title of your project?',
-        name: 'project',
+        name: 'title',
     },
     {
         type: 'input',
@@ -73,7 +73,7 @@ function init() {
 	inquirer.prompt(questions)
     .then((response) => {
 		const readmeContent = generate(response);
-        writeToFile("README.md", readmeContent, (err) =>    
+        writeToFile("generatedREADME.md", readmeContent, (err) =>    
 		err ? console.log("Error, try again!") : console.log('Your README has been successfully created!'))
 });
 }

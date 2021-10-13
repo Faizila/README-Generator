@@ -44,6 +44,7 @@ const questions = [
             "GNU GPL v3",
             "GNU AGPL v3",
             "GNU LGPL v3",
+            "ISC",
         ],  
         name: 'license',
     },
@@ -83,7 +84,7 @@ function init() {
 	inquirer.prompt(questions)
     .then((response) => {
 		const readmeContent = generate(response);
-        writeToFile("generatedREADME.md", readmeContent, (err) =>    
+        writeToFile("README.md", readmeContent, (err) =>    
 		err ? console.log("Error, try again!") : console.log('Your README has been successfully created!'))
 });
 }

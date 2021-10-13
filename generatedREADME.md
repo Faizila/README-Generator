@@ -1,4 +1,4 @@
-# README-Generator
+# README Generator
 
   ## Description
   Professional README Generator
@@ -16,10 +16,10 @@
   npm i inquirer
 
   ## Usage
-  node index.js
+  npm
       
   ## Contributing
-  Faizila Amlani
+  Faizila
 
   ## License
   MIT

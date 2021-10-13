@@ -4,11 +4,25 @@ Professional README Generator
 
 # Description
 
-* README Generator is a node.js application that dynamically generates a professional README.md file from the user's response using the npm Inquirer package.
+* README Generator is a node.js command-line application that dynamically generates a professional README.md file from a user's input using the npm Inquirer package.
 
 * When user types node index.js in the command line then the user is prompted with few questions about the project.
 
 * Once user answers all the questions then this application generates a README.md file based on user's response.
+
+* The README will be populated with the following:
+
+1. Project title
+2. Description
+3. Table of Contents
+4. Installation
+5. Usage
+6. License
+7. Contributing
+8. Tests
+9. Questions
+- User GitHub profile link
+- User GitHub email
 
 # Table of Contents
 
@@ -28,21 +42,25 @@ Professional README Generator
 
 # Installation
 
-Run the following commands for installation:
+* Run the following commands for installation:
 
+```bash
 npm init
 
 npm install inquirer
-
+```
 # Usage
 
-Run the following command at the root of your project and answer the prompted questions:
+* The application will be invoked by using the following command:
 
+```bash
 node index.js
+```
+* Answer the prompted questions and a README.md file will be generated based on the response.
 
 # License
 
-MIT
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Contributors
 
@@ -67,5 +85,6 @@ https://github.com/Faizila/README-Generator/blob/main/generatedREADME.md
 # Video
 
 See a walkthrough video demonstrating the functionality of the application here:
+https://watch.screencastify.com/v/UhhsGGLOtBcgX4ZdzxJx
 
   

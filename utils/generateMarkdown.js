@@ -1,14 +1,29 @@
 //function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+  function renderLicenseBadge(license) {
+    switch(license) {
+      case 'MIT':
+        return `This project is licensed under the [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) License.`
+        break;
+        case 'Apache':
+          return `This project is licensed under the [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) License.`
+          break;
+      case 'GNU':
+        return `This project is licensed under the [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) License`
+        break;
+      default:
+        return 'This project has no license'
+        }
+      }
 
-//function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
 
-//function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// //function that returns the license link
+// // If there is no license, return an empty string
+// function renderLicenseLink(license) {}
+
+// //function that returns the license section of README
+// // If there is no license, return an empty string
+// function renderLicenseSection(license) {}
 
 //function to generate markdown for README
 function generateMarkdown(data) {
@@ -33,10 +48,10 @@ function generateMarkdown(data) {
   ${data.usage}
       
   ## Contributing
-  Contributors in this project: ${data.contributing}
+  ${data.contributing}
 
   ## License
-  License used in this project: ${data.license}
+  ${data.license}
   
   ## Tests
   ${data.tests}
@@ -44,7 +59,9 @@ function generateMarkdown(data) {
   
   ## Questions
   - If you have any other questions or comments you can contact me at:
+   <br>
    My GitHub: https://github.com/${data.username}
+   <br>
    My Email : ${data.email}
 
   ---

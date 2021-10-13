@@ -13,24 +13,26 @@
   * [Questions](#questions)
 
   ## Installation
-  inquirer
+  npm i inquirer
 
   ## Usage
-  none
+  node index.js
       
   ## Contributing
-  Contributors in this project: Faizila
+  Faizila Amlani
 
   ## License
-  License used in this project: MIT
+  MIT
   
   ## Tests
-  none
+  npm test
 
   
   ## Questions
   - If you have any other questions or comments you can contact me at:
+   <br>
    My GitHub: https://github.com/Faizila
+   <br>
    My Email : amlani.faizila@gmail.com
 
   ---

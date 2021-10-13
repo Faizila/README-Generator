@@ -94,8 +94,7 @@ https://watch.screencastify.com/v/asWIj0BnZ9dIox2UbR1q
 
 # Questions
 
-- If you have any other questions or comments you can contact me at:
-<br>
+If you have any other questions or comments you can contact me at:
    <br>
    My GitHub: https://github.com/Faizila
    <br>
